@@ -3,15 +3,6 @@
 
 <head>
     <!--/公共jsp -->
-
-
-
-
-
-
-
-
-
     <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,6 +28,32 @@
     <script src="http://res.bit.edu.cn/bower_components/qrcode.js/qrcode.js"></script>
     <script src="http://res.bit.edu.cn/fe_components/mobile/bh_utils_mobile.js"></script>
     <script src="../../swpubapp/public/mob/js/i18nUtil.js"></script>
+
+    <!--get time and update js -->
+    <script type="text/javascript">
+        window.onload = function () {
+            var d = new Date();
+            // get date
+            var year = d.getFullYear();
+            var month = d.getMonth() + 1;
+            if (month >= 1 && month <= 9) {
+                month = "0" + month;
+            }
+            var date = d.getDate();
+            if (date >= 0 && date <= 9) {
+                date = "0" + date;
+            }
+            var qjdate = year + "-" + month + "-" + date;
+            var rangedate = qjdate + " 至 " + qjdate;
+            var fdydate = qjdate + " " + "08:24:39";
+            document.getElementById("start-date").innerHTML = qjdate;
+            document.getElementById("end-date").innerHTML = qjdate;
+            document.getElementById("apply-date").innerHTML = qjdate;
+            document.getElementById("fdy-date").innerHTML = fdydate;
+            document.getElementById("range-date").innerHTML = rangedate;
+        }
+    </script>
+
     <style type="text/css">
         .emapm-form input,
         .emapm-form span,
@@ -340,8 +357,9 @@
                                                         </div>
                                                         <div class="mint-cell-value mt-color-grey-lv3"
                                                             style="flex: 1 1 calc(100% - 96px); justify-content: normal;">
-                                                            <div class="em-select-value mt-color-grey-lv3">2022-03-08 至
-                                                                2022-03-31</div>
+                                                            <div id="range-date"
+                                                                class="em-select-value mt-color-grey-lv3">2022-03-12 至
+                                                                2022-03-12</div>
                                                         </div>
                                                         <!---->
                                                     </div>
@@ -365,7 +383,8 @@
                                                         </div>
                                                         <div class="mint-cell-value mt-color-grey-lv3"
                                                             style="flex: 1 1 calc(100% - 96px); justify-content: normal;">
-                                                            <div class="em-select-value mt-color-grey-lv3">2022-03-08
+                                                            <div id="start-date"
+                                                                class="em-select-value mt-color-grey-lv3">2022-01-01
                                                             </div>
                                                         </div>
                                                         <!---->
@@ -391,7 +410,8 @@
                                                         </div>
                                                         <div class="mint-cell-value mt-color-grey-lv3"
                                                             style="flex: 1 1 calc(100% - 96px); justify-content: normal;">
-                                                            <div class="em-select-value mt-color-grey-lv3">2022-03-31
+                                                            <div id="end-date"
+                                                                class="em-select-value mt-color-grey-lv3">2022-01-01
                                                             </div>
                                                         </div>
                                                         <!---->
@@ -417,7 +437,7 @@
                                                         </div>
                                                         <div class="mint-cell-value mt-color-grey-lv3"
                                                             style="flex: 1 1 calc(100% - 96px); justify-content: normal;">
-                                                            <div class="em-select-value mt-color-grey-lv3">23</div>
+                                                            <div class="em-select-value mt-color-grey-lv3">1</div>
                                                         </div>
                                                         <!---->
                                                     </div>
@@ -442,7 +462,8 @@
                                                         </div>
                                                         <div class="mint-cell-value mt-color-grey-lv3"
                                                             style="flex: 1 1 calc(100% - 96px); justify-content: normal;">
-                                                            <span class="mt-color-grey-lv3 mt-cell-diy-span">医院复查</span>
+                                                            <span
+                                                                class="mt-color-grey-lv3 mt-cell-diy-span">海淀医院复查</span>
                                                         </div>
                                                         <!---->
                                                     </div>
@@ -466,7 +487,7 @@
                                                         </div>
                                                         <div class="mint-cell-value mt-color-grey-lv3"
                                                             style="flex: 1 1 calc(100% - 96px); justify-content: normal;">
-                                                            <div class="em-select-value mt-color-grey-lv3">1120205039
+                                                            <div class="em-select-value mt-color-grey-lv3">100
                                                             </div>
                                                         </div>
                                                         <!---->
@@ -617,8 +638,9 @@
                                                 class="mint-icon mint-icon-checked iconfont icon-wancheng mt-color-primary"></i>
                                         </div>
                                         <div class="mint-step__time mt-color-grey-lv4">
-                                            <div class="mint-text bh-color-gray-4 OCjaunojrmr mt-color-default">
-                                                2022-03-08
+                                            <div id="apply-date"
+                                                class="mint-text bh-color-gray-4 OCjaunojrmr mt-color-default">
+                                                2022-03-11
                                             </div>
                                         </div>
                                         <div class="mint-step__title">
@@ -635,18 +657,19 @@
                                                 class="mint-icon mint-icon-checked iconfont icon-wancheng mt-color-primary"></i>
                                         </div>
                                         <div class="mint-step__time mt-color-grey-lv4">
-                                            <div class="mint-text bh-color-gray-4 OCjaunojrmr mt-color-default">
-                                                2022-03-08
-                                            </div>
-                                            <div class="mint-text bh-color-gray-4 OCjaunojrmr mt-color-default">
-                                                9:13:23
-                                            </div>
+                                            <div id="fdy-date"
+                                                class="mint-text bh-color-gray-4 OCjaunojrmr mt-color-default">
+                                                2022-01-01 08:20:39</div>
                                         </div>
                                         <div class="mint-step__title">辅导员审核</div>
-                                        <div class="mint-step__title">通过</div>
-                                        <div class="mint-step__title">审核人：王宇勇</div>
-                                        <div class="mint-step__title">辅导员审核</div>
                                         <div class="mint-step__line mt-bg-grey-lv6"></div>
+                                        <div>
+                                            <div class="mint-text OCjaunojrix mt-color-default">通过</div>
+                                            <div class="mint-text OCjaunojrix mt-color-default">审核人：王宇勇</div>
+                                            <div class="mint-text OCjaunojrix mt-color-default">
+                                                <pre>审核意见：通过</pre>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="mint-step bh-color-gray-3 mint-step--vertical mint-step--finish mt-color-grey-lv4"
                                         text="结束">

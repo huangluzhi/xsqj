@@ -3,15 +3,6 @@
 
 <head>
     <!--/公共jsp -->
-
-
-
-
-
-
-
-
-
     <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +32,26 @@
 
 
     <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ddxyS0HbFrhDygTOED1gnDh2sGUcLHd7"></script> -->
-
+    <!--get time and update js -->
+    <script type="text/javascript">
+        window.onload = function(){
+            var d = new Date();
+            // get date
+            var year = d.getFullYear();
+            var month = d.getMonth() + 1;
+            if(month >= 1 && month <= 9){
+                month = "0" + month;
+            }
+            var date = d.getDate();
+            if(date >=0 && date <= 9){
+                date = "0" + date;
+            }
+            var qjdate = year + "-" + month + "-" + date;
+            var rangedate = qjdate + " 至 " + qjdate + " / 共1天";
+            document.getElementById("range-date").innerHTML = rangedate;
+        }  
+    </script>
+    
 
     <div id="baidumapdiv" style="display: none;"></div>
 
@@ -72,8 +82,158 @@
                                 </div>
                                 <div class="mint-layout-lr">
                                     <div position="left" class="mint-layout-lr-item mint-layout-container">
+                                        <div id="range-date" class="mint-text bh-color-gray-3 sjaky9s9n mt-color-default">2022-03-12 至
+                                            2022-03-12 / 共1天</div>
+                                    </div>
+                                    <div position="right" class="mint-layout-lr-item mint-layout-container OCjaup3gjo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mint-hr" style="background: rgb(232, 232, 232);"></div>
+                        </div>
+                        <div class="mint-layout-container cjarv696w">
+                            <div class="mint-layout-container bh-bg-color-light sjaku1g03 OPjdjwm5hrz">
+                                <div class="mint-layout-lr OCjaup3gjn">
+                                    <div position="left" class="mint-layout-lr-item mint-layout-container">
+                                        <div class="mint-text bh-color-gray sjakvwd5t OCjaup3gjsk mt-color-default">
+                                            2022春季学期进出校</div>
+                                    </div>
+                                    <div position="right" class="mint-layout-lr-item mint-layout-container">
+                                        <!---->
+                                        <div class="mint-text bh-color-gray sjakvxbio OCjaup3gjrk mt-color-default">已销假
+                                        </div> <span
+                                            class="mint-badge sjarv4c2z OCjaup3gjsp OPjdjwm5htz mt-color-white mt-bg-primary is-size-small bh-bg-color-green"></span>
+                                    </div>
+                                </div>
+                                <div class="mint-layout-lr">
+                                    <div position="left" class="mint-layout-lr-item mint-layout-container">
                                         <div class="mint-text bh-color-gray-3 sjaky9s9n mt-color-default">2022-03-08 至
-                                            2022-03-31 / 共23天</div>
+                                            2022-03-08 / 共1天</div>
+                                    </div>
+                                    <div position="right" class="mint-layout-lr-item mint-layout-container OCjaup3gjo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mint-hr" style="background: rgb(232, 232, 232);"></div>
+                        </div>
+                        <div class="mint-layout-container cjarv696w">
+                            <div class="mint-layout-container bh-bg-color-light sjaku1g03 OPjdjwm5hrz">
+                                <div class="mint-layout-lr OCjaup3gjn">
+                                    <div position="left" class="mint-layout-lr-item mint-layout-container">
+                                        <div class="mint-text bh-color-gray sjakvwd5t OCjaup3gjsk mt-color-default">
+                                            2022春季学期进出校</div>
+                                    </div>
+                                    <div position="right" class="mint-layout-lr-item mint-layout-container">
+                                        <!---->
+                                        <div class="mint-text bh-color-gray sjakvxbio OCjaup3gjrk mt-color-default">已销假
+                                        </div> <span
+                                            class="mint-badge sjarv4c2z OCjaup3gjsp OPjdjwm5htz mt-color-white mt-bg-primary is-size-small bh-bg-color-green"></span>
+                                    </div>
+                                </div>
+                                <div class="mint-layout-lr">
+                                    <div position="left" class="mint-layout-lr-item mint-layout-container">
+                                        <div class="mint-text bh-color-gray-3 sjaky9s9n mt-color-default">2022-03-06 至
+                                            2022-03-06 / 共1天</div>
+                                    </div>
+                                    <div position="right" class="mint-layout-lr-item mint-layout-container OCjaup3gjo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mint-hr" style="background: rgb(232, 232, 232);"></div>
+                        </div>
+                        <div class="mint-layout-container cjarv696w">
+                            <div class="mint-layout-container bh-bg-color-light sjaku1g03 OPjdjwm5hrz">
+                                <div class="mint-layout-lr OCjaup3gjn">
+                                    <div position="left" class="mint-layout-lr-item mint-layout-container">
+                                        <div class="mint-text bh-color-gray sjakvwd5t OCjaup3gjsk mt-color-default">
+                                            2022春季学期进出校</div>
+                                    </div>
+                                    <div position="right" class="mint-layout-lr-item mint-layout-container">
+                                        <!---->
+                                        <div class="mint-text bh-color-gray sjakvxbio OCjaup3gjrk mt-color-default">已销假
+                                        </div> <span
+                                            class="mint-badge sjarv4c2z OCjaup3gjsp OPjdjwm5htz mt-color-white mt-bg-primary is-size-small bh-bg-color-green"></span>
+                                    </div>
+                                </div>
+                                <div class="mint-layout-lr">
+                                    <div position="left" class="mint-layout-lr-item mint-layout-container">
+                                        <div class="mint-text bh-color-gray-3 sjaky9s9n mt-color-default">2022-03-05 至
+                                            2022-03-05 / 共1天</div>
+                                    </div>
+                                    <div position="right" class="mint-layout-lr-item mint-layout-container OCjaup3gjo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mint-hr" style="background: rgb(232, 232, 232);"></div>
+                        </div>
+                        <div class="mint-layout-container cjarv696w">
+                            <div class="mint-layout-container bh-bg-color-light sjaku1g03 OPjdjwm5hrz">
+                                <div class="mint-layout-lr OCjaup3gjn">
+                                    <div position="left" class="mint-layout-lr-item mint-layout-container">
+                                        <div class="mint-text bh-color-gray sjakvwd5t OCjaup3gjsk mt-color-default">
+                                            2022春季学期进出校</div>
+                                    </div>
+                                    <div position="right" class="mint-layout-lr-item mint-layout-container">
+                                        <!---->
+                                        <div class="mint-text bh-color-gray sjakvxbio OCjaup3gjrk mt-color-default">已销假
+                                        </div> <span
+                                            class="mint-badge sjarv4c2z OCjaup3gjsp OPjdjwm5htz mt-color-white mt-bg-primary is-size-small bh-bg-color-green"></span>
+                                    </div>
+                                </div>
+                                <div class="mint-layout-lr">
+                                    <div position="left" class="mint-layout-lr-item mint-layout-container">
+                                        <div class="mint-text bh-color-gray-3 sjaky9s9n mt-color-default">2022-03-03 至
+                                            2022-03-03 / 共1天</div>
+                                    </div>
+                                    <div position="right" class="mint-layout-lr-item mint-layout-container OCjaup3gjo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mint-hr" style="background: rgb(232, 232, 232);"></div>
+                        </div>
+                        <div class="mint-layout-container cjarv696w">
+                            <div class="mint-layout-container bh-bg-color-light sjaku1g03 OPjdjwm5hrz">
+                                <div class="mint-layout-lr OCjaup3gjn">
+                                    <div position="left" class="mint-layout-lr-item mint-layout-container">
+                                        <div class="mint-text bh-color-gray sjakvwd5t OCjaup3gjsk mt-color-default">
+                                            2022春季学期进出校</div>
+                                    </div>
+                                    <div position="right" class="mint-layout-lr-item mint-layout-container">
+                                        <!---->
+                                        <div class="mint-text bh-color-gray sjakvxbio OCjaup3gjrk mt-color-default">已销假
+                                        </div> <span
+                                            class="mint-badge sjarv4c2z OCjaup3gjsp OPjdjwm5htz mt-color-white mt-bg-primary is-size-small bh-bg-color-green"></span>
+                                    </div>
+                                </div>
+                                <div class="mint-layout-lr">
+                                    <div position="left" class="mint-layout-lr-item mint-layout-container">
+                                        <div class="mint-text bh-color-gray-3 sjaky9s9n mt-color-default">2022-03-02 至
+                                            2022-03-02 / 共1天</div>
+                                    </div>
+                                    <div position="right" class="mint-layout-lr-item mint-layout-container OCjaup3gjo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mint-hr" style="background: rgb(232, 232, 232);"></div>
+                        </div>
+                        <div class="mint-layout-container cjarv696w">
+                            <div class="mint-layout-container bh-bg-color-light sjaku1g03 OPjdjwm5hrz">
+                                <div class="mint-layout-lr OCjaup3gjn">
+                                    <div position="left" class="mint-layout-lr-item mint-layout-container">
+                                        <div class="mint-text bh-color-gray sjakvwd5t OCjaup3gjsk mt-color-default">
+                                            2022春季学期进出校</div>
+                                    </div>
+                                    <div position="right" class="mint-layout-lr-item mint-layout-container">
+                                        <!---->
+                                        <div class="mint-text bh-color-gray sjakvxbio OCjaup3gjrk mt-color-default">已销假
+                                        </div> <span
+                                            class="mint-badge sjarv4c2z OCjaup3gjsp OPjdjwm5htz mt-color-white mt-bg-primary is-size-small bh-bg-color-green"></span>
+                                    </div>
+                                </div>
+                                <div class="mint-layout-lr">
+                                    <div position="left" class="mint-layout-lr-item mint-layout-container">
+                                        <div class="mint-text bh-color-gray-3 sjaky9s9n mt-color-default">2022-03-01 至
+                                            2022-03-01 / 共1天</div>
                                     </div>
                                     <div position="right" class="mint-layout-lr-item mint-layout-container OCjaup3gjo">
                                     </div>
@@ -98,7 +258,7 @@
                                 <div class="mint-layout-lr">
                                     <div position="left" class="mint-layout-lr-item mint-layout-container">
                                         <div class="mint-text bh-color-gray-3 sjaky9s9n mt-color-default">2021-10-08 至
-                                            2021-10-16 / 共8天</div>
+                                            2021-10-08 / 共1天</div>
                                     </div>
                                     <div position="right" class="mint-layout-lr-item mint-layout-container OCjaup3gjo">
                                     </div>
@@ -123,7 +283,7 @@
                                 <div class="mint-layout-lr">
                                     <div position="left" class="mint-layout-lr-item mint-layout-container">
                                         <div class="mint-text bh-color-gray-3 sjaky9s9n mt-color-default">2021-10-01 至
-                                            2021-10-07 / 共7天</div>
+                                            2021-10-02 / 共2天</div>
                                     </div>
                                     <div position="right" class="mint-layout-lr-item mint-layout-container OCjaup3gjo">
                                     </div>
